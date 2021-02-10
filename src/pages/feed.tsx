@@ -4,15 +4,13 @@ import posts from "@.contents/posts.json";
 
 async function generateFeedXml() {
   const feed = new RSS({
-    title: "タイトル",
-    description: "説明",
-    site_url: "サイトのURL",
-    feed_url: "フィードページのURL",
+    title: "私の記事のRSS",
+    description: "各種ブログRSSの集約",
+    site_url: "https://team-blog-hub-silk.vercel.appL",
+    feed_url: "https://team-blog-hub-silk.vercel.app/feed",
     language: 'ja',
   });
-
-  // 例としてpostsを含めるイメージ
-  // このあたりの書き方はライブラリのドキュメントを参考にしてください
+  
   posts?.forEach((post) => {
     feed.item({
       title: post.title,
