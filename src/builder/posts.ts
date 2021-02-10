@@ -24,7 +24,7 @@ async function fetchFeedItems(url: string) {
     .map(({ title, contentSnippet, link, isoDate }) => {
       return {
         title,
-        contentSnippet: contentSnippet?.replace(/\n/g, ""),
+        contentSnippet: contentSnippet?.replace(/\n/g, "").replace(/\r/g, ""),
         link,
         isoDate,
         dateMiliSeconds: isoDate ? new Date(isoDate).getTime() : 0,

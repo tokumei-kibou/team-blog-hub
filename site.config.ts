@@ -14,8 +14,8 @@ export const config = {
       href: "/about",
     },
     {
-      title: "Company",
-      href: "https://zenn.dev/catnose99/articles/cb72a73368a547756862",
+      title: "re:RSS",
+      href: "https://team-blog-hub-silk.vercel.app/feed",
     },
     {
       title: "GitHub",
